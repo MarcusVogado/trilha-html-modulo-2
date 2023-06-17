@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica DIO.me Enviar Mensagem</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+</head>
+
+<body>
+    <header class="header">
+        <img src="Imgs/LogoClinica.png" alt="Logo da Clinica Dio">
+    </header>
+    <aside class="sidebar">
+        <nav>
+            <button>
+                <a href="Index.html">
+                    <span>
+                        <i class="material-symbols-outlined">home</i>
+                        <span>Início</span>
+                    </span>
+                </a>
+            </button>
+            <button><a href="PageCalendar.html">
+                    <span>
+                        <i class="material-symbols-outlined">calendar_month</i>
+                        <span>Nossos Horários</span>
+                    </span>
+                </a>
+            </button>
+            <button>
+                <a href="PageMap.html">
+                    <span>
+                        <i class="material-symbols-outlined">map</i>
+                        <span>Como Chegar</span>
+                    </span>
+                </a>
+            </button>
+            <button>
+                <a href="PageInfo.html">
+                    <span>
+                        <i class="material-symbols-outlined">info</i>
+                        <span>Quem Somos</span>
+                    </span>
+                </a>
+            </button>
+        </nav>
+    </aside>
+    <main class="maincontent">
+        <div>
+            <section>
+                <article class="container">
+                    <h1>Envie Sua mensagem</h1>
+                    <form method="get" class="formContent">
+                        <fieldset>
+                            <div class="campo">
+                                <label>Nome</label>
+                                <input type="text" name="name" required>
+                            </div>
+                            <div class="campo">
+                                <label>E-mail</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="campo">
+                                <label>Assunto</label>
+                                <input type="text" name="assunto" required>
+                            </div>
+                            <div class="campo">
+                                <label>Mensagem</label>
+                                <textarea name="mensagem" id="" cols="50" rows="10"
+                                    placeholder="Digite sua Mensagem :)" required></textarea><br>
+                            </div>
+                            <div class="campo">
+                                <button type="reset">
+                                    <span>
+                                        <i class="material-symbols-outlined">clear</i>
+                                        <span>Limpar</span>
+                                    </span>
+                                </button>
+                                <button type="submit">
+                                    <span>
+                                        <i class="material-symbols-outlined">send</i>
+                                        <span>Enviar</span>
+                                    </span></button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer class="">
+        <span>Todos os direitos reservados &copy; Clínica DIO.me</span>
+        <button>
+            <span>
+                <i class="material-symbols-outlined">phone_in_talk</i>
+                <span>(99) 9 9999-9999</span>
+            </span>
+        </button>
+        <button>
+            <a href="PageMap.html">
+                <span>
+                    <i class="material-symbols-outlined">map</i>
+                    <span>Como Chegar</span>
+                </span>
+            </a>
+        </button>
+        <button>
+            <a href="PageInfo.html">
+                <span>
+                    <i class="material-symbols-outlined">info</i>
+                    <span>Quem Somos</span>
+                </span>
+            </a>
+        </button>
+
+    </footer>
+</body>
+
+</html>
