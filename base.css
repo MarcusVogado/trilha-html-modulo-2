@@ -1,38 +1,185 @@
-html, body {
-    margin: 0;
-}
-body {
-    background-color: #f1f1f1;
-    display: flex;
-    justify-content: center;
+* {
+    box-sizing: border-box;
 }
 
-.wrapper {
-    width: 1200px;
-    display: flex;
-    margin: 0 auto;
-    background-color: aquamarine;
-}
-.main {
-    display: flex;
-    flex-flow: column;
-    width: 85%;
-}
-.menu {
-    width: 15%;
-    background-color: aqua;
-    padding: 10px 20px 0px;
-}
 .header {
-    background-color: rgb(5, 108, 108);
-    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 0 0 10px;
+    height: 80px;
 }
-.content {
-    background-color: white;
-    min-height: 300px;
-    padding: 20px;
+
+.header img {
+    width: 200px;
+    height: 70px;
+    margin-top: 5px;
+
 }
-.footer {
-    background-color: rgb(99, 56, 240);
-    min-height: 150px;
+
+.header span {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+    font-size: 48px;
+    color: blue;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: azure;
+
+}
+
+.border {
+    border: 1px solid red;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 200px;
+    align-items: self-start;
+    margin: 80px 0px 0px 10px;
+    padding: 0px 10px 60px 10px;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar button {
+    height: 50px;
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+    transition: all 0.3s;
+}
+
+.sidebar button:hover>a {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.sidebar button>a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+    padding: 0 12px 0 0px;
+    color: black;
+}
+
+.sidebar button a>span {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+    padding: 0 12px 0 0px;
+}
+
+.maincontent {
+    display: flex;
+    width: 80%;
+    margin: 20px 0px 0px 210px;
+    height: 80%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    justify-content: space-evenly;  
+    margin-bottom: 80px; 
+}
+
+
+.container img{
+    width: 700px;
+    width: 400px;
+}
+.container button>a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+    padding: 0 12px 0 0px;
+    color: black;
+}
+.container button {
+    background: transparent;
+    border: 0;    
+}
+.container button span> img {
+    width: 50px;
+}
+.container span {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 16px 0 12px;
+}
+
+.tableCalendar {
+    width: 100%;
+    border: none;
+}
+
+.tableCalendar thead {
+    background: black;
+    color: white;
+}
+
+.tableCalendar tbody {
+    color: black;
+}
+
+ .tableCalendar tbody tr:nth-child(even) th {
+    background-color: #ccc;    
+} 
+.tableCalendar tr:hover>th{
+    background-color: bisque;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 80%;
+    position: fixed;
+    margin-left: 210px;
+    align-content: center;
+    justify-content: center;
+    bottom: 0;
+    gap: 30px;
+
+}
+
+footer button {
+    background: transparent;
+    border: 0;
+}
+
+footer button>a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+    padding: 0 12px 0 0px;
+    color: black;
+}
+
+footer button:hover>a {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+footer span {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 16px 0 12px;
 }
