@@ -145,6 +145,9 @@ body {
     padding: 0 12px 0 0px;
     color: black;
 }
+.container button a:hover {
+    background: rgba(60,  15, 255, 0.3);
+}
 
 .container button {
     background: transparent;
@@ -181,7 +184,7 @@ body {
 }
 
 .tableCalendar tr:hover>th {
-    background-color: bisque;
+    background: rgba(60,  15, 255, 0.3);
 }
 
 footer {
@@ -214,7 +217,7 @@ footer button>a {
 }
 
 footer button:hover>a {
-    background: rgba(0, 0, 0, 0.08);
+    background: rgba(60,  15, 255, 0.3);
 }
 
 footer span {
@@ -227,6 +230,7 @@ footer span {
 .formContent button {
     cursor: pointer;
 }
+
 
 .formContent button:hover {
     background: #ccc;
